@@ -25,7 +25,6 @@ mode = st.sidebar.radio(
     ["Image", "Video"] if IS_RENDER else ["Image", "Video", "Live Webcam"]
 )
 
-st.sidebar.markdown("Live Webcam mode launches a **native Python window** (OpenCV) for smooth realtime tracking.")
 
 # session_state to keep track of subprocess
 if "webcam_proc" not in st.session_state:
@@ -174,3 +173,4 @@ else:
         - If the runner doesn't start, run `python webcam_runner.py` manually from the same folder to see error messages.
         """
     )
+
